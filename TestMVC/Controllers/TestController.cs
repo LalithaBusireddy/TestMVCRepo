@@ -79,6 +79,8 @@ namespace WebApplication1.Controllers
             DbAccess db = new DbAccess();
             db.DeleteEmployee(id);
             return RedirectToAction("employees", "test");
+
+
         }
         //public string GetString()
         //{
