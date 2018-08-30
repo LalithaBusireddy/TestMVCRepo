@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "testview";
+}
+
+<h2>This is just a test view</h2>
+
+<div>
+    @{  WebApplication1.Models.Employee emp =(WebApplication1.Models.Employee)ViewData["emp"];
+
+    }
+    <input id="txtId" type="text" value="@emp.EmployeeId" />
+    <input id="txtName" type="text" value="@emp.EmployeeName" />
+    <input id="txtEmail" type="text" value="@emp.Location" />
+    <input id="btnSave" type="button" value="Save"/>
+</div>
